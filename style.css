@@ -1,0 +1,108 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the navbar stays above content */
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Hide checkbox, used to control the nav-links */
+#menu-toggle {
+    display: none;
+}
+
+/* CONTENT */
+.content {
+    padding: 100px 20px; /* Added padding to avoid overlap with fixed navbar */
+    text-align: center;
+}
+
+/* CONTACT FORM */
+.contact-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    /* Show the hamburger menu */
+    .hamburger {
+        display: block;
+    }
+
+    /* Hide nav links by default */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Position below the fixed navbar */
+        left: 0;
+    }
+
+    /* Space out the menu items */
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    /* Toggle the nav links when the menu is checked */
+    #menu-toggle:checked + .hamburger + .nav-links {
+        display: flex;
+    }
+}

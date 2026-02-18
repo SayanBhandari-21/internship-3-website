@@ -1,0 +1,173 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | Cognifyz</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Enhanced styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links li {
+            display: inline-block;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        .content {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 8px;
+        }
+
+        .content h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .content .highlight {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .content .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-box {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-box h3 {
+            color: #007bff;
+            font-size: 24px;
+        }
+
+        .service-box p {
+            color: #444;
+        }
+
+        .content img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .testimonial {
+            margin-top: 50px;
+            background-color: #333;
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .testimonial h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Cognifyz</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰</label>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="internship.html">Internship</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="content">
+    <h1>About Cognifyz</h1>
+    <p>Welcome to <span class="highlight">Cognifyz Technologies</span>, where innovation meets intelligence. We specialize in harnessing the power of Data Science, AI, and Machine Learning to solve the toughest challenges businesses face today.</p>
+
+    <div class="services">
+        <div class="service-box">
+            <h3>AI-Powered Chatbot</h3>
+            <p>Automate customer support and engagement with our smart AI chatbots. Available for websites, social media, and messaging apps, they are designed to improve customer satisfaction and reduce response times.</p>
+        </div>
+        <div class="service-box">
+            <h3>Machine Learning Solutions</h3>
+            <p>Unlock the potential of your data with our ML solutions for predictive analytics, fraud detection, and recommendation engines. Make smarter, data-driven decisions that improve efficiency and profitability.</p>
+        </div>
+        <div class="service-box">
+            <h3>Data Analytics</h3>
+            <p>Transform raw data into actionable insights with our powerful analytics tools. We help businesses understand their data and make informed decisions that drive growth.</p>
+        </div>
+    </div>
+
+    <img src="https://via.placeholder.com/800x400" alt="Technology Image">
+
+    <div class="testimonial">
+        <h2>What Our Clients Say</h2>
+        <p>"Cognifyz's AI-driven solutions have completely transformed the way we interact with our customers. The automation has saved us time and improved satisfaction significantly." - Jane Doe, CEO, TechCorp</p>
+    </div>
+</section>
+
+</body>
+</html>

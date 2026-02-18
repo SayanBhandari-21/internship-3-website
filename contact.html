@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Cognifyz</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f7fa;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        /* Contact Form Section */
+        .contact-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            background-color: #f4f4f4;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 24px;
+            color: #007bff;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #0056b3;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        /* Google Maps Section */
+        .map-container {
+            margin-top: 50px;
+            height: 400px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">Cognifyz</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰</label>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="internship.html">Internship</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Reach out to us with any inquiries or feedback.</p>
+</section>
+
+<!-- Contact Form Section -->
+<section class="contact-section">
+    <h2>Get in Touch</h2>
+
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">📘</a>
+        <a href="https://twitter.com" target="_blank">🐦</a>
+        <a href="https://linkedin.com" target="_blank">🔗</a>
+    </div>
+</section>
+
+<!-- Google Map -->
+<section class="map-container">
+    <h2>Our Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.2763964117934!2d90.40344131541304!3d23.780283893312186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5b3dbf7d3d9%3A0x8e7b1a36c6844c88!2sCognifyz%20Technologies!5e0!3m2!1sen!2sus!4v1674633318192!5m2!1sen!2sus" 
+            loading="lazy"></iframe>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <p>&copy; 2026 Cognifyz Technologies. All Rights Reserved.</p>
+</section>
+
+</body>
+</html>

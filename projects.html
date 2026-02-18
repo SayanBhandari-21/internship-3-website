@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Cognifyz</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f9;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        /* Projects Section */
+        .projects-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            width: 280px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            transition: 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-content h3 {
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .project-content p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .project-content a {
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .project-content a:hover {
+            background-color: #0056b3;
+        }
+
+        /* CTA Section */
+        .cta {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .cta a {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        .cta a:hover {
+            background-color: #1e7e34;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">Cognifyz</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰</label>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="internship.html">Internship</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <h1>My Web Development Projects</h1>
+    <p>Here are some projects developed during my internship journey at Cognifyz.</p>
+</section>
+
+<!-- Projects -->
+<section class="projects-section">
+    <div class="projects-container">
+
+        <div class="project-card">
+            <img src="download (5).jpg" alt="HTML CSS Project">
+            <div class="project-content">
+                <h3>HTML & CSS Webpage</h3>
+                <p>A fully structured and styled webpage using modern HTML5 and CSS3 techniques.</p>
+                <a href="https://cognifyz.com/">View Project</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="download (6).jpg" alt="JavaScript Calculator">
+            <div class="project-content">
+                <h3>JavaScript Calculator</h3>
+                <p>A functional calculator built using JavaScript with interactive UI and logic.</p>
+                <a href="https://cognifyz.com/">View Project</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="download (7).jpg" alt="Responsive Website">
+            <div class="project-content">
+                <h3>Responsive Website</h3>
+                <p>A mobile-friendly website using Flexbox and media queries for responsiveness.</p>
+                <a href="https://cognifyz.com/">View Project</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="download (8).jpg" alt="Bootstrap Layout">
+            <div class="project-content">
+                <h3>Bootstrap Layouts</h3>
+                <p>Designed responsive layouts using Bootstrap grid system and components.</p>
+                <a href="https://cognifyz.com/">View Project</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Call To Action -->
+<section class="cta">
+    <h2>Want to See More Projects?</h2>
+    <p>Explore more innovative work and practical implementations.</p>
+    <a href="contact.html">Contact Me</a>
+</section>
+
+</body>
+</html>
